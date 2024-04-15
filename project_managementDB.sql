@@ -1,65 +1,34 @@
-CREATE DATABASE project_management;
+-- CREATE DATABASE project_management;
 
 USE project_management;
 
-CREATE TABLE projects (
-	project_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    project_name VARCHAR(100) NOT NULL, 
-    project_description TEXT,
-    created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    priority ENUM('LOW', 'MEDIUM', 'HIGH')
-);
-CREATE TABLE deadline (
-	project_id INT,
-	FOREIGN KEY (project_id)
-	REFERENCES projects (project_id),
-    deadline DATE NOT NULL PRIMARY KEY,
-	updated_on DATETIME,
-    project_status ENUM('TO DO', 'ONGOING', 'COMPLETED')
-);
+-- CREATE TABLE user_data (
+-- 	user_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+--     first_name VARCHAR(50),
+--     last_name VARCHAR(50),
+--     job_title VARCHAR(100),
+--     email VARCHAR(100)
+-- );
 
-CREATE TABLE user_data (
-	user_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    job_title VARCHAR(100),
-    email VARCHAR(100)
-);
+-- CREATE TABLE projects (
+-- 	project_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+--     project_name VARCHAR(100) NOT NULL, 
+--     project_description TEXT,
+--     created_on DATETIME,
+--     priority ENUM('LOW', 'MEDIUM', 'HIGH'),
+--     deadline DATETIME NOT NULL,
+-- 	updated_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     project_status ENUM('TO DO', 'ONGOING', 'COMPLETED'),
+--     user_id INT,
+--     FOREIGN KEY user_assigned (user_id)
+--     REFERENCES user_data (user_id)
+-- );
+-- INSERT INTO user_data (user_id, first_name, last_name, job_title, email) VALUES
+-- (1, "John" , "Smith", "E-Learning Instructor", "JSmith@gmail.com"),
+-- (2, "Jo", "Ellis", "Junior Developer", "JEllis@gmail.com"),
+-- (3, "Elle", "Turner", "Full Stack Developer", "ETurner@hotmail.com"),
+-- (4, "Bob", "Johnson", "Manager", "BobJohnson@gmail.com");
 
-CREATE TABLE project_tasks (
-	project_id INT,
-	FOREIGN KEY (project_id)
-	REFERENCES projects (project_id),
-    task_id DECIMAL(2,1) NOT NULL PRIMARY KEY,
-    task VARCHAR(255),
-    task_status ENUM('TO DO', 'ONGOING', 'COMPLETED')
-);
-
-CREATE TABLE tasks_assigned (
-    user_id_assigned INT,
-    FOREIGN KEY (user_id)
-	REFERENCES users (user_id),
-    project_id INT,
-	FOREIGN KEY (project_id)
-	REFERENCES projects (project_id),
-    task_id DECIMAL (2,1),
-	FOREIGN KEY (task_id)
-	REFERENCES project_tasks (task_id)
-);
-
-CREATE TABLE user_task_reflection (
-	user_id_assigned INT,
-    FOREIGN KEY (user_id)
-	REFERENCES users (user_id),
-    project_id INT,
-	FOREIGN KEY (project_id)
-	REFERENCES projects (project_id),
-    task_id DECIMAL (2,1),
-	FOREIGN KEY (task_id)
-	REFERENCES project_tasks (task_id),
-    achievement_reflection TEXT
-);
-
-
-
-
+-- INSERT INTO projects (project_id, project_name, project_description, created_on, priority, deadline, updated_on, project_status, user_id) VALUES
+-- ( 1, "Online Learning Platform", "Develop an online learning platform where users can access courses, participate in quizzes and track gaps in knowledge",'2024-04-11', 'LOW', '2024-06-22', '2024-04-12','TO DO', 1),
+-- ( 2, "Fitness Tracking Platform", "Develop a fitness tracking app where users can set fitness goals, track their workouts, and monitor their progress.", '2024-03-20', 'HIGH', '2024-05-15', '2024-04-13','ONGOING', 2);
