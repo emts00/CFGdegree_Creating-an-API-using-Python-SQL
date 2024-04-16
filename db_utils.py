@@ -181,7 +181,7 @@ def get_deadline(project_id):
             print("Project {} does not exist".format(project_id))
         else:
             for i in result:
-                print("The deadline of project {} is on (YYYY-MM-DD) {}".format(project_id, i))
+                print("The deadline of project {} is on (YYYY-MM-DD) {} is assigned to the project".format(project_id, i))
         mycursor.close()      
 
     except Exception:
