@@ -73,19 +73,19 @@ def run():
     
     if user_input == 1:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project? Type the project id: "))
         get_project(project_id)
 
         
     elif user_input == 2:
         fetch_user_ID_table()
-        user_id = int(input("Type the user id: "))
+        user_id = int(input("Which user would you like more information on? Type the user id: "))
         get_user(user_id)
 
 
     elif user_input == 3:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project would you like to retrieve the deadline for? Type the project id: "))
         get_deadline(project_id)
 
 
@@ -99,8 +99,8 @@ def run():
 
     elif user_input == 6:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
-        status = input("Type the project status (TO DO, ONGOING, COMPLETED): ").upper()
+        project_id = int(input("Which project would you like to change the status of? Type the project id: "))
+        status = input("Type the project status to change to (TO DO, ONGOING, COMPLETED): ").upper()
         if status not in ["TO DO", "ONGOING", "COMPLETED"]:
             status= input("INVALID INPUT. Enter project status (TO DO, ONGOING, COMPLETED):  ").upper()
         else:
@@ -111,14 +111,14 @@ def run():
 
     elif user_input == 7:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project would you like to reassign? Type the project id: "))
         fetch_user_ID_table()
-        user_id = int(input("Type the user id: "))
+        user_id = int(input("Which user to reassign the project to? Type the user id: "))
         update_project_user(user_id, project_id)
 
     elif user_input == 8:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project would you like to delete? Type the project id: "))
         delete_project_by_id(project_id)
 
     elif user_input == 9:
@@ -128,6 +128,7 @@ def run():
     else:
         print("goodbye")
         sys.exit()
+
 
 if __name__ == '__main__':
     run()

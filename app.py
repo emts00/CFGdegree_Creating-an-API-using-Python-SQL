@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Welcome to Project Management!"
+    return "Welcome to Project Management"
 
 @app.route('/getprojects/<project_id>')
 def get_a_project(project_id):

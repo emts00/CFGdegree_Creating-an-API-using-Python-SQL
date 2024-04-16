@@ -161,9 +161,7 @@ def get_project(project_id):
     except Exception:
         raise DbConnectionError("Failed to read data from DB.") 
     
-    
     finally:
-        
         if db_connection:
             db_connection.close()
             print("DB connection is closed")
@@ -189,7 +187,7 @@ def get_deadline(project_id):
             print("Project {} does not exist".format(project_id))
         else:
             for i in result:
-                print("The deadline of project {} is on (YYYY-MM-DD) {} is assigned to this project ".format(project_id, i))
+                print("The deadline of project {} is on (YYYY-MM-DD) {}".format(project_id, i))
         mycursor.close()      
 
     except Exception:
@@ -224,7 +222,7 @@ def get_user(user_id):
                 print(i)
         query2 = "SELECT p.project_name, p.project_description FROM user_data u JOIN projects p ON u.user_id = p.user_id WHERE u.user_id = {}".format(user_id) 
         mycursor.execute(query2)
-        print("User {} was involved in these projects: ".format(user_id))
+        print("User {} is involved in these projects: ".format(user_id))
         result2 = mycursor.fetchone()
         if result2 is None:
             print("User {} is not involved in any projects".format(user_id))
