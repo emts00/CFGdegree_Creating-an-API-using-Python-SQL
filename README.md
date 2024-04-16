@@ -114,5 +114,5 @@ Requirements
   + To delete a project, run main.py and input 8 in the command line and input project id linked to project to delete
     + RESPONSE: Success! Project (project id) has now been deleted or if no such project in database "Project (project id) does not exist!.
 
-  + If you run main.py and input 9 in the command line, it will quit the program
++ If you run main.py and input 9 in the command line, it will quit the program
       
