@@ -1,12 +1,14 @@
+
 import requests
+import json
 from db_utils import fetch_projects_ID_table, fetch_user_ID_table, get_project, get_user, get_deadline, delete_project_by_id, update_project_user, create_project, create_new_user, update_project_status
 import sys
 
 def get_project_details(project_id):
-    requests.get('http://127.0.0.1:5000/get-projects/{}'.format(project_id),
+    result = requests.get('http://127.0.0.1:5000/getprojects/{}'.format(project_id),
                           headers= {'content-type': 'application/json'}
     )
-    result=get_project_details(project_id)
+    get_project(project_id)
     return result.json()
 
 def get_user_details(user_id):

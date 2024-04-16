@@ -455,8 +455,3 @@ def delete_project_by_id(project_id):
 
 
 
-# if __name__ == '__main__':
-    # print(get_all_booking_availability('2024-04-15'))
-    # add_booking("2024-04-15", "Magdalena", "12-13", "Sam")
-    # print(get_all_booking_availability('2024-04-15'))
-    #is this where i print out the database in terminal after get, put, post and delete requests?
