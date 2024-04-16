@@ -51,8 +51,8 @@ Requirements
 + Python (version 3.12.2)
 + MySQL (version 8.0.36)
 
-+ Clone the repository: [git clone](https://github.com/emts00/CFGDegreeSpring2024.git)
-+ Navigate to the project directory: cd CFGDegreeSpring2024
++ Clone the repository: [git clone](https://github.com/emts00/CFGDegreeAssignment4.git)
++ Navigate to the project directory: cd CFGDegreeAssignment4
 + Install dependencies: pip install -r requirements.txt
 + Edit the configuration file config.py to configure database connection settings
   HOST = "127.0.0.1"
