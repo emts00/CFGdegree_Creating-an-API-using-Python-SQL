@@ -93,26 +93,26 @@ Requirements
 
 
 + POST/create-user
-+ To create a new user, run main.py and input 5 in the command line and input (first name, last name, job title, email
+  + To create a new user, run main.py and input 5 in the command line and input (first name, last name, job title, email
     + RESPONSE: New user:(first name) (last name) has been created. Their role: (job title). Please contact via email (email)
 
  
 + PUT/update-project_status/<project_status>/<project_id>
-+ To update the project status of a specific project, run main.py and input 6 in the command line and input the project id of the project you want to update and the status (to do, ongoing, completed). 
+  + To update the project status of a specific project, run main.py and input 6 in the command line and input the project id of the project you want to update and the status (to do, ongoing, completed). 
     + RESPONSE: Success! Project (project id) has been updated to (project status)
     + If project id does not exist, it will ask you whether you would like to create a new project, if yes press "Y", if no, press another key and the program will end
 
  
 + PUT/update-project-user/<user_id>/<project_id>
-+ To assign a different user to a specific project, run main.py and input 7 in the command line and input the project id of the project you want to update and the user you would like to assign this project to 
+  + To assign a different user to a specific project, run main.py and input 7 in the command line and input the project id of the project you want to update and the user you would like to assign this project to 
     + RESPONSE: Success! Project (project id) has now been assigned to user ID (user id)
     + If project id does not exist in the database, it will ask you whether you would like to create a new project, if yes press "Y" and it will move to project creation endpoint. If no, press another key and the program will end
     + If user id does not exist, it will ask you whether you would like to create a new user, if yes press "Y", it will move to create-user endpoint. If no, press another key and the program will end
 
  
 + DELETE/delete-project/<project_id>
-+ To delete a project, run main.py and input 8 in the command line and input project id linked to project to delete
+  + To delete a project, run main.py and input 8 in the command line and input project id linked to project to delete
     + RESPONSE: Success! Project (project id) has now been deleted or if no such project in database "Project (project id) does not exist!.
 
-+ If you run main.py and input 9 in the command line, it will quit the program
+  + If you run main.py and input 9 in the command line, it will quit the program
       
