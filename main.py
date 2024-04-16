@@ -1,6 +1,5 @@
 
 import requests
-import json
 from db_utils import fetch_projects_ID_table, fetch_user_ID_table, get_project, get_user, get_deadline, delete_project_by_id, update_project_user, create_project, create_new_user, update_project_status
 import sys
 
