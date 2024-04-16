@@ -7,6 +7,7 @@ Marks:
 + A. Design and implementation of an API (33 marks)
 + B. Code readability, layout, and use of best practices (4 marks)
 + C. Creativity (5 marks)
+  
 **You should:**
 + Implement API endpoints with appropriate functionality
 + Implement one additional endpoint of your choice (can be POST or GET but with a
@@ -79,3 +80,39 @@ Requirements
 + GET/get-user/<user_id>
   + To retrieve user details of a specific user in the database run main.py and input 2 in the command line and choose from the available users shown in the terminal to see users' details.
     + RESPONSE: User details: (first name, last name, job title) . User is involved in these projects: (project name, project description)
+
+   
++ GET/get-deadline/<project_id>
+  + To retrieve deadline of a specific project in the database run main.py and input 3 in the command line and choose from the available projects shown in the terminal to see project details.
+    + RESPONSE: The deadline of project (project_id) is on (YYYY-MM-DD)
+
+
++ POST/projectcreation
+  + To create a new project, run main.py and input 4 in the command line and input (project name, project description, created date, priority of project (low, medium, high), deadline of project, updated date, project status (To do, ongoing, completed), user id assigned to the project
+    + RESPONSE: New project:(project name) has been created.About the project: (project description) Created on: (YYYY-MM-DD). Project prority: (low, medium, high) with the deadline: (YYYY-MM-DD). It was last updated on the (YYYY-MM-DD). Project status is (To do, ongoing, completed). The user ID assigned to this project is (user id)
+
+
++ POST/create-user
++ To create a new user, run main.py and input 5 in the command line and input (first name, last name, job title, email
+    + RESPONSE: New user:(first name) (last name) has been created. Their role: (job title). Please contact via email (email)
+
+ 
++ PUT/update-project_status/<project_status>/<project_id>
++ To update the project status of a specific project, run main.py and input 6 in the command line and input the project id of the project you want to update and the status (to do, ongoing, completed). 
+    + RESPONSE: Success! Project (project id) has been updated to (project status)
+    + If project id does not exist, it will ask you whether you would like to create a new project, if yes press "Y", if no, press another key and the program will end
+
+ 
++ PUT/update-project-user/<user_id>/<project_id>
++ To assign a different user to a specific project, run main.py and input 7 in the command line and input the project id of the project you want to update and the user you would like to assign this project to 
+    + RESPONSE: Success! Project (project id) has now been assigned to user ID (user id)
+    + If project id does not exist in the database, it will ask you whether you would like to create a new project, if yes press "Y" and it will move to project creation endpoint. If no, press another key and the program will end
+    + If user id does not exist, it will ask you whether you would like to create a new user, if yes press "Y", it will move to create-user endpoint. If no, press another key and the program will end
+
+ 
++ DELETE/delete-project/<project_id>
++ To delete a project, run main.py and input 8 in the command line and input project id linked to project to delete
+    + RESPONSE: Success! Project (project id) has now been deleted or if no such project in database "Project (project id) does not exist!.
+
++ If you run main.py and input 9 in the command line, it will quit the program
+      
