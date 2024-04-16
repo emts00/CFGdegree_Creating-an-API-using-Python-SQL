@@ -1,12 +1,12 @@
 # :cherry_blossom: CFGDegree :purple_heart:
-## Assignment 4 Build your own API. Requirements:
-Design and implement a simple API as done in class.
-Remember to come up with a unique creative problem or scenario and show real-life expected
-use of your database!
-Marks:
-+ A. Design and implementation of an API (33 marks)
-+ B. Code readability, layout, and use of best practices (4 marks)
-+ C. Creativity (5 marks)
+## Assignment 4 Build your own API. 
++ Requirements:
+  + Design and implement a simple API as done in class.
+  + Remember to come up with a unique creative problem or scenario and show real-life expected use of your database!
++ Marks:
+  + A. Design and implementation of an API (33 marks)
+  + B. Code readability, layout, and use of best practices (4 marks)
+  + C. Creativity (5 marks)
   
 **You should:**
 + Implement API endpoints with appropriate functionality
