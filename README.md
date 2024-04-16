@@ -48,9 +48,9 @@ Development (TDD) are essential skills in programming
 + Functionality: You can add new projects, add new users, assign a user to a project, delete projects, update projects and search for projects already in the database.
 
 **Installation**
-Requirements
-+ Python (version 3.12.2)
-+ MySQL (version 8.0.36)
++ Requirements
+  + Python (version 3.12.2)
+  + MySQL (version 8.0.36)
 
 + Clone the repository: [git clone](https://github.com/emts00/CFGDegreeAssignment4.git)
 + Navigate to the project directory: cd CFGDegreeAssignment4
