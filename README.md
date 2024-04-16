@@ -30,14 +30,14 @@ Optional : Test your API - this is not part of the markscheme, but testing and T
 Development (TDD) are essential skills in programming
 
 **Using GitHub to demonstrate:**
-+ Checking the status: [https://github.com/emts00/CFGDegreeSpring2024/master/git-status.png](https://github.com/emts00/CFGDegreeSpring2024/blob/master/git-status.png)
-+ Creating a branch:[ https://github.com/emts00/CFGDegreeSpring2024/master/creating-branch.png](https://github.com/emts00/CFGDegreeSpring2024/blob/master/creating-branch.png)
-+ Adding files to a branch:  [ https://github.com/emts00/CFGDegreeSpring2024/master/git-add-files.png](https://github.com/emts00/CFGDegreeSpring2024/blob/master/git-add-files.png)
-+ Adding commits with meaningful messages:[ https://github.com/emts00/CFGDegreeSpring2024/master/add-commits-meaningful-msg.png](https://github.com/emts00/CFGDegreeSpring2024/blob/master/add-commits-meaningful-msg.png)
-+ Opening a pull request: [https://github.com/emts00/CFGDegreeSpring2024/master/opening-pull-request.png](https://github.com/emts00/CFGDegreeSpring2024/blob/master/opening-pull-request.png)
-+ Merging and deploying to the main branch: [ https://github.com/emts00/CFGDegreeSpring2024/master/push-to-main-branch.png](https://github.com/emts00/CFGDegreeSpring2024/blob/master/push-to-main-branch.png)
++ Checking the status: [https://github.com/emts00/CFGDegreeAssignment4/blob/main/git-status.PNG](https://github.com/emts00/CFGDegreeAssignment4/blob/main/git-status.PNG)
++ Creating a branch: [https://github.com/emts00/CFGDegreeAssignment4/blob/main/creating-branch.png](https://github.com/emts00/CFGDegreeAssignment4/blob/main/creating-branch.png)
++ Adding files to a branch:  [https://github.com/emts00/CFGDegreeAssignment4/blob/main/git-add-files.png](https://github.com/emts00/CFGDegreeAssignment4/blob/main/git-add-files.png)
++ Adding commits with meaningful messages: [https://github.com/emts00/CFGDegreeAssignment4/blob/main/add-commits-meaningful-msg.png](https://github.com/emts00/CFGDegreeAssignment4/blob/main/add-commits-meaningful-msg.png) 
++ Opening a pull request: [https://github.com/emts00/CFGDegreeAssignment4/blob/main/creating%20a%20pull%20request.png](https://github.com/emts00/CFGDegreeAssignment4/blob/main/creating%20a%20pull%20request.png)
++ Merging and deploying to the main branch: [https://github.com/emts00/CFGDegreeAssignment4/blob/main/push%20onto%20main%20branch.PNG] (https://github.com/emts00/CFGDegreeAssignment4/blob/main/push%20onto%20main%20branch.PNG)
 
-+ Create .gitignore (can be empty) and briefly explain what it is for. **.gitignore configures git to ignore files you don't want to check into GitHub, it tells git what to ignore when you make a commit.** [https://github.com/emts00/CFGDegreeSpring2024/master/created-.gitignore.png](https://github.com/emts00/CFGDegreeSpring2024/blob/master/created-.gitignore.png)
++ Create .gitignore (can be empty) and briefly explain what it is for. **.gitignore configures git to ignore files you don't want to check into GitHub, it tells git what to ignore when you make a commit.** [https://github.com/emts00/CFGDegreeAssignment4/blob/main/create%20gitignore.PNG](https://github.com/emts00/CFGDegreeAssignment4/blob/main/create%20gitignore.PNG)
   
 + Create requirements.txt (can be empty) and briefly explain what it is for. **It is a file where you can save a list of modules and packages required by your python project.**
 
