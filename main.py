@@ -46,19 +46,19 @@ def run():
     
     if user_input == 1:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project would you like to get the details for? Type the project id: "))
         get_project(project_id)
 
         
     elif user_input == 2:
         fetch_user_ID_table()
-        user_id = int(input("Type the user id: "))
+        user_id = int(input("Which user to get details for? Type the user id: "))
         get_user(user_id)
 
 
     elif user_input == 3:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project to get deadline for? Type the project id: "))
         get_deadline(project_id)
 
 
@@ -72,7 +72,7 @@ def run():
 
     elif user_input == 6:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project to update status? Type the project id: "))
         status = input("Type the project status (TO DO, ONGOING, COMPLETED): ").upper()
         if status not in ["TO DO", "ONGOING", "COMPLETED"]:
             status= input("INVALID INPUT. Enter project status (TO DO, ONGOING, COMPLETED):  ").upper()
@@ -84,14 +84,14 @@ def run():
 
     elif user_input == 7:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project to assign a different user to? Type the project id: "))
         fetch_user_ID_table()
-        user_id = int(input("Type the user id: "))
+        user_id = int(input("Assign to which user? Type the user id: "))
         update_project_user(user_id, project_id)
 
     elif user_input == 8:
         fetch_projects_ID_table()
-        project_id = int(input("Type the project id: "))
+        project_id = int(input("Which project to delete? Type the project id: "))
         delete_project_by_id(project_id)
 
     elif user_input == 9:
